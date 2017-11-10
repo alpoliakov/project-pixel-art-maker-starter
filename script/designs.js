@@ -4,7 +4,7 @@ $(function() {
   const inputColor = $('#colorPicker');
   let color = inputColor.val();
 
-  inputColor.on('blur', () => color = inputColor.val());
+  inputColor.on('blur', () => (color = inputColor.val()));
 
   let table = $('#pixel_canvas');
 
