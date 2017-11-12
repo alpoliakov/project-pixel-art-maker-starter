@@ -30,5 +30,8 @@ $(function() {
   $('.sizePicker').click(makeGrid);
 
   // Handler for "drawing"
-  table.click(evt => $(evt.target).css('background', $('.colorPicker').val()));
+  table.click(evt => $(evt.target).css({
+      'background': $('.colorPicker').val(),
+      'border-style': 'hidden'
+  }));
 });
