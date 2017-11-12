@@ -1,11 +1,5 @@
 // Set the initial values and avoid global variables
 $(function() {
-  // Select color input
-  const inputColor = $('.colorPicker');
-  let color = inputColor.val();
-
-  inputColor.on('blur', () => (color = inputColor.val()));
-
   let table = $('.pixel_canvas');
 
   // The event handler for clicking on "submit"
@@ -36,5 +30,5 @@ $(function() {
   $('.sizePicker').click(makeGrid);
 
   // Handler for "drawing"
-  table.click(evt => $(evt.target).css('background', color));
+  table.click(evt => $(evt.target).css('background', $('.colorPicker').val()));
 });
