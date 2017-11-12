@@ -22,8 +22,8 @@ $(function() {
     for (let count = 0; count < height; count++) {
       table.append(`<tr>${col}</tr>`);
     }
-
-    $('.button__form').val("CLEAN the CANVAS");
+      
+    $('.button__form').val(table.children().length ? "CLEAN the CANVAS" : "CREATE a CANVAS");
 
     return false;
   };
