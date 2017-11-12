@@ -1,17 +1,43 @@
+@import "reset.css";
+
+@font-face {
+    font-family: Abelone-FREE;
+    src: url('../fonts/Abelone-FREE.otf');
+}
+
 body {
+    padding: 0;
+    margin: 0;
     text-align: center;
     background-color: #f5f5f5;
+    font-family: Abelone-FREE, "Helvetica Neue", sans-serif;
+}
+
+header {
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .095);
+    z-index: 80;
+    padding: 8px 16px;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-family: Monoton, "Helvetica Neue", sans-serif;
     font-size: 70px;
     margin: 0.2em;
+    color: #9f9f9f;
+}
+
+.container {
+    margin: 10px auto;
+    width: 90%;
+    font-size: 18px;
 }
 
 h2 {
     margin: 1em 0 0.25em;
     color: #9f9f9f;
+    font-size: 24px;
 }
 
 h2:first-of-type {
@@ -22,7 +48,7 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 
 table {
@@ -40,4 +66,23 @@ td {
 
 input[type=number] {
     width: 6em;
+    height: 1.3em;
+    font-size: 16px;
+    border-radius: 4px;
+
+}
+
+.button__form {
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.colorPicker {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

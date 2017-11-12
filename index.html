@@ -11,22 +11,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <header>
+        <h1>Lab: Pixel Art Maker</h1>
+    </header>
+    <div class="container">
+        <h2>Choose Grid Size</h2>
+        <form class="sizePicker">
+            Grid Height:
+            <input type="number" class="input_height" name="height" min="1" value="0" title="Choose height">
+            Grid Width:
+            <input type="number" class="input_width" name="width" min="1" value="0" title="Choose width">
+            <input type="submit" class="button__form" title="Button for form" value="CREATE a CANVAS">
+        </form>
 
-    <h2>Choose Grid Size</h2>
-    <form class="sizePicker">
-        Grid Height:
-        <input type="number" class="input_height" name="height" min="1" value="0" title="Choose height">
-        Grid Width:
-        <input type="number" class="input_width" name="width" min="1" value="0" title="Choose width">
-        <input type="submit" title="Button for form">
-    </form>
+        <h2>Pick A Color</h2>
+        <input type="color" class="colorPicker" title="Choose color">
 
-    <h2>Pick A Color</h2>
-    <input type="color" class="colorPicker" title="Choose color">
-
-    <h2>Design Canvas</h2>
-    <table class="pixel_canvas"></table>
+        <h2>Design Canvas</h2>
+        <table class="pixel_canvas"></table>
+    </div>
 
     <script src="script/designs.js"></script>
 </body>

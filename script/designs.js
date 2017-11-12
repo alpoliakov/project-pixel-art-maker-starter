@@ -23,6 +23,8 @@ $(function() {
       table.append(`<tr>${col}</tr>`);
     }
 
+    $('.button__form').val("CLEAN the CANVAS");
+
     return false;
   };
 
