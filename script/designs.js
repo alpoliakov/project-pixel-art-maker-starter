@@ -8,8 +8,8 @@ $(function() {
     if (el.type !== 'submit') return;
 
     // Select size input
-    let height = $('.input_height').val();
-    let width = $('.input_width').val();
+    const height = $('.input_height').val();
+    const width = $('.input_width').val();
 
     // Clean the "old" table
     table.children().remove();
@@ -26,14 +26,16 @@ $(function() {
     $('.button__form').val(table.children().length ? "CLEAN the CANVAS" : "CREATE the CANVAS");
 
     return false;
+
   };
 
   // When size is submitted by the user, call makeGrid()
   $('.sizePicker').click(makeGrid);
 
   // Handler for "drawing"
-  table.click(evt => $(evt.target).css({
+  table.mousedown(evt => $(evt.target).css({
       'background': $('.colorPicker').val(),
       'border-style': 'hidden'
   }));
+
 });
